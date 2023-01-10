@@ -29,7 +29,7 @@ import static org.junit.Assert.*;
  * @since 19/11/16 22:22
  */
 @SuppressWarnings("all")
-public class CompletableFuture20个例子 {
+public class CompletableFuture20Examples {
 	final String message = "message";
 	final String MESSAGE = "MESSAGE";
 	final String original = "Message";

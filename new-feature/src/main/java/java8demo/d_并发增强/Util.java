@@ -25,7 +25,7 @@ public class Util {
 
     public static double format(double number) {
         synchronized (formatter) {
-            return new Double(formatter.format(number));
+            return Double.parseDouble(formatter.format(number));
         }
     }
 
@@ -40,7 +40,7 @@ public class Util {
         );
 */
         return CompletableFuture.supplyAsync(() -> futures.stream().
-                map(future -> future.join()).
+                map(CompletableFuture::join).
                 collect(Collectors.<T>toList()));
     }
 }

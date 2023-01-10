@@ -1,4 +1,4 @@
-package exercises.answer;
+package java8demo.answer;
 
 import java.util.ArrayList;
 import java.util.List;
